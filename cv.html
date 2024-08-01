@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    function hideAll() {
+        var aboutMe = document.getElementById("aboutMe");
+        var cv = document.getElementById("cv");
+        var projects = document.getElementById("projects");
+        var skills = document.getElementById("skills");
+        var contact = document.getElementById("contact");
+        aboutMe.style.display = "none";
+        cv.style.display = "none";
+        projects.style.display = "none";
+        skills.style.display = "none";
+        contact.style.display = "none";
+    }
+    function showAboutMe() {
+        var aboutMe = document.getElementById("aboutMe");
+        if(aboutMe.style.display === "none") {
+            hideAll();
+            aboutMe.style.display = "block";
+        }
+        else {
+            aboutMe.style.display = "none";
+        }
+    }
+    function showCV() {
+        var cv = document.getElementById("cv");
+        if(cv.style.display === "none") {
+            hideAll();
+            cv.style.display = "block";
+        }
+        else {
+            cv.style.display = "none";
+        }
+    }
+    function showProjects() {
+        var projects = document.getElementById("projects");
+        if(projects.style.display === "none") {
+            hideAll();
+            projects.style.display = "block";
+        }
+        else {
+            projects.style.display = "none";
+        }
+    }
+    function showSkills() {
+        var skills = document.getElementById("skills");
+        if(skills.style.display === "none") {
+            hideAll();
+            skills.style.display = "block";
+        }
+        else {
+            skills.style.display = "none";
+        }
+    }
+    function showContact() {
+        var contact = document.getElementById("contact");
+        if(contact.style.display === "none") {
+            hideAll();
+            contact.style.display = "block";
+        }
+        else {
+            contact.style.display = "none";
+        }
+    }
+</script>
+<html>
+    <head>
+        <style>
+            body {
+                background-color: black; 
+                background-image: url("hack.png");
+                background-size: cover;
+            }
+        </style>
+        <title>CV of Bradley Perelaer</title>
+    </head>
+    <body>
+        <style>
+            h1 {
+                color: white;
+                text-align: center;
+                font-size: 30px;
+            }
+            a:link {
+                color: greenyellow;
+                text-align: center;
+                font-size: 20px;
+            }
+            a:visited {
+                color: palevioletred;
+                text-align: center;
+                font-size: 20px;
+            }
+            a:hover {
+                color: aquamarine;
+                text-align: center;
+                font-size: 20px;
+            }
+            p {
+                text-align: center;
+            }
+            button {
+                color: white;
+                background-color: rebeccapurple;
+                font-size: 20px;
+                text-align: center;
+                display: inline-block;
+                margin: auto;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+            table {
+                background-color: black;
+                color: white;
+                text-align: center;
+                font-size: 20px;
+                font-family: 'Times New Roman', Times, serif;
+                margin: auto;
+            }
+            th, td {
+                border: 1px solid white;
+                border-radius: 30px;
+            }
+        </style>
+        <h1>Select what to view:</h1>
+        <p>
+            <button id="btnAbout" name="btnAbout" onclick="showAboutMe()" style="width:200px;height:40px">About Me</button>
+            <button id="btnCV" name="btnCV" onclick="showCV()" style="width:200px;height:40px">CV/Resume</button>
+            <button id="btnProjects" name="btnProjects" onclick="showProjects()" style="width:200px;height:40px">Projects</button>
+        </p>
+        <p>
+            <button id="btnSkills" name="btnSKills" onclick="showSkills()" style="width:200px;height:40px">Skills</button>
+            <button id="btnContact" name="btnContact" onclick="showContact()" style="width:200px;height:40px">Contact Information</button>
+        </p>
+        <p><a href="CV Bradley Perelaer.pdf" target="_blank" rel="noopener noreferrer">Get this CV as a printable pdf</a></p>
+        <div id="aboutMe" style="display: none"> <table id="tAboutMe" style="width:60%">
+            <tr>
+                <th>About Me</th>
+            </tr>
+            <tr>
+                    <td>Good day. As also stated by the introduction, my name is Bradley Perelaer. <br>
+                        I am a 21-year old student busy studying BSc IT at NWU. <br>
+                        My goal is to one day become a professional ethical hacker/cybersecurity analyst. <br>
+                        I have had a passion for studying in this field since I was 15 years old, but my interest in IT in general <br>
+                        started roughly around the age of 11 already. <br>
+                        As a direct result of this, I've had a hobbie of learning lots of weird and interesting facts about IT, <br>
+                        even if said facts aren't directly related to my dream field, whether that be from reading articles online <br>
+                        or watching IT content creators on platforms such as Youtube. <br>
+                        I am versed in a number of programming languages and related softwares, and have even begun to learn <br>
+                        the ins and outs of working with hardware in my spare time through small IT jobs.</td>
+            </tr>
+        </table> </div>
+        <div id="cv" style="display: none"> <table id="tCV" style="width:80%">
+            <p>CV/Resume</p>
+            <tr>
+                <th>Qualification</th>
+                <th>Status</th>
+                <th>Additional Information</th>
+            </tr>
+            <tr>
+                <th>Highest Grade Passed</th>
+                <td>Matric</td>
+                <td>Achieved in 2021 at Oosterland Highschool, Secunda</td>
+            </tr>
+            <tr>
+                <th>Subjects in Matric</th>
+                <td>Afrikaans HL<br>
+                    English FAL<br>
+                    Mathematics<br>
+                    Life Orientation<br>
+                    Electrical Technology (Power Systems)<br>
+                    Engineering Graphics & Design<br>
+                    Physical Sciences</td>
+                <td>69%<br>
+                    75%<br>
+                    71%<br>
+                    73%<br>
+                    73%<br>
+                    80%<br>
+                    73%</td>
+            </tr>
+            <tr>
+                <th>Current educational status</th>
+                <td>Studying</td>
+                <td>BSc IT @ North-West University</td>
+            </tr>
+            <tr>
+                <th>Driver's Licence</th>
+                <td>Code B</td>
+                <td>Owns own transportation</td>
+            </tr>
+            <tr>
+                <th>Highschool Achievements</th>
+                <td>12 years 100% attendance<br>
+                    Subject Trophy for EGD</td>
+                <td>From grade 1-12<br>
+                    80% in Matric</td>
+            </tr>
+            <tr>
+                <th>Courses</th>
+                <td>TurboCAD 2D Fundamental<br>
+                    TurboCAD 3D</td>
+                <td></td>
+            </tr>
+        </table> </div>
+        <div id="projects" style="display: none"> <table id="tProjects" style="width:80%">
+            <tr>
+                <th>Project</th>
+                <th>Description</th>
+                <th>Link</th>
+            </tr>
+            <tr>
+                    <td>HMS Data Platform</td>
+                    <td>WIP Group Project for CMPG323</td>
+                    <td><a href="https://github.com/bernard-paetzold/HMS-TLS-ingenious-plebs" target="_blank" rel="noopener noreferrer">https://github.com/bernard-paetzold/HMS-TLS-ingenious-plebs</a></td>
+            </tr>
+            <tr>
+                <td>This CV/Resume</td>
+                <td>The repository for the CV/Resume you're on right now!</td>
+                <td><a href="cv.html" target="_blank" rel="noopener noreferrer">Continue</a></td>
+            </tr>
+        </table> </div>
+        <div id="skills" style="display: none"> <table id="tSkills" style="width:80%">
+            <tr>
+                <th>Known Programming languages</th>
+                <td>Python<br>
+                    Java<br>
+                    C#<br>
+                    C++<br>
+                    SQL</td>
+            </tr>
+            <tr>
+                <th>Experience with Virtual Machines</th>
+                <td>Basic experience with VMS such as VirtualBox & VMWare</td>
+            </tr>
+            <tr>
+                <th>IT technician</th>
+                <td>Basic experience in troubleshooting hardware & software related problems</td>
+            </tr>
+            <tr>
+                <th>TurboCAD</th>
+                <td>2 years experience with TurboCAD 2D/3D</td>
+            </tr>
+        </table> </div>
+        <div id="contact" style="display: none"> <table id="tContact" style="width:80%">
+            <tr>
+                <th>Cellphone Number</th>
+                <td>076 289 8388</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>bradley.perelaer@gmail.com</td>
+            </tr>
+            <tr>
+                <th>LinkedIn</th>
+                <td><a href="https://www.linkedin.com/in/bradley-perelaer-a5280329b/" target="_blank" rel="noopener noreferrer">Bradley Perelaer's Profile</a></td>
+            </tr>
+        </table> </div>
+    </body>
+</html>
