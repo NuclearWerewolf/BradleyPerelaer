@@ -64,12 +64,14 @@
         }
     }
 </script>
+
+
 <html>
     <head>
         <style>
             body {
                 background-color: black; 
-                background-image: url("hack.png");
+                background-image: url("cv_bg.png");
                 background-size: cover;
             }
         </style>
@@ -86,23 +88,26 @@
                 color: white;
                 text-align: center;
                 font-size: 20px;
+                font-weight: bold;
             }
             a:visited {
                 color: white;
                 text-align: center;
                 font-size: 20px;
+                font-weight: bold;
             }
             a:hover {
                 color: aquamarine;
                 text-align: center;
                 font-size: 20px;
+                font-weight: bold;
             }
             p {
                 text-align: center;
             }
             button {
                 color: white;
-                background-color: rebeccapurple;
+                background-color: rgb(47, 47, 47);;
                 font-size: 20px;
                 text-align: center;
                 display: inline-block;
@@ -111,37 +116,45 @@
                 cursor: pointer;
             }
             table {
-                background-color: black;
+                background-color: white;
                 color: white;
                 text-align: center;
                 font-size: 20px;
                 font-family: 'Times New Roman', Times, serif;
                 margin: auto;
             }
-            th, td {
-                border: 1px solid white;
-                /* border-radius: 30px; */
+            th {
+                background-color: rgb(47, 47, 47);
+            }
+            td {
+                background-color: rgb(111, 111, 111);
             }
         </style>
+
         <h1>Select what to view:</h1>
         <p>
             <button id="btnAbout" name="btnAbout" onclick="showAboutMe()" style="width:200px;height:40px">About Me</button>
             <button id="btnCV" name="btnCV" onclick="showCV()" style="width:200px;height:40px">CV/Resume</button>
             <button id="btnProjects" name="btnProjects" onclick="showProjects()" style="width:200px;height:40px">Projects</button>
         </p>
+
         <p>
             <button id="btnSkills" name="btnSKills" onclick="showSkills()" style="width:200px;height:40px">Skills</button>
             <button id="btnContact" name="btnContact" onclick="showContact()" style="width:200px;height:40px">Contact Information</button>
         </p>
+
         <p><a href="CV Bradley Perelaer.pdf" target="_blank" rel="noopener noreferrer">Get this CV as a printable pdf</a></p>
+
         <div id="aboutMe" style="display: none"> <table id="tAboutMe" style="width:60%">
             <tr>
                 <th>About Me</th>
             </tr>
             <tr>
-                    <td>Good day. As also stated by the introduction, my name is Bradley Perelaer. <br>
-                        I am a 21-year old student busy studying BSc IT at NWU. <br>
+                    <td>Good day. My name is Bradley Perelaer. <br>
+                        I am a 21-year old student finishing up my last semester in BSc IT at NWU. <br>
                         My goal is to one day become a professional ethical hacker/cybersecurity analyst. <br>
+                        However I am presently looking for any kind of IT-related work as a means to gain <br>
+                        any kind of experience I can. <br>
                         I have had a passion for studying in this field since I was 15 years old, but my interest in IT in general <br>
                         started roughly around the age of 11 already. <br>
                         As a direct result of this, I've had a hobbie of learning lots of weird and interesting facts about IT, <br>
@@ -151,8 +164,8 @@
                         the ins and outs of working with hardware in my spare time through small IT jobs.</td>
             </tr>
         </table> </div>
+
         <div id="cv" style="display: none"> <table id="tCV" style="width:80%">
-            <p>CV/Resume</p>
             <tr>
                 <th>Qualification</th>
                 <th>Status</th>
@@ -198,6 +211,7 @@
                 <td></td>
             </tr>
         </table> </div>
+
         <div id="projects" style="display: none"> <table id="tProjects" style="width:80%">
             <tr>
                 <th>Project</th>
@@ -218,6 +232,7 @@
                 <td><a href="https://github.com/NuclearWerewolf/BradleyPerelaer" target="_blank" rel="noopener noreferrer">https://github.com/NuclearWerewolf/BradleyPerelaer</a></td>
             </tr>
         </table> </div>
+
         <div id="skills" style="display: none"> <table id="tSkills" style="width:80%">
             <tr>
                 <th>Known Programming languages</th>
@@ -242,6 +257,7 @@
                 <td>2 years experience with TurboCAD 2D/3D</td>
             </tr>
         </table> </div>
+
         <div id="contact" style="display: none"> <table id="tContact" style="width:80%">
             <tr>
                 <th>Cellphone Number</th>
